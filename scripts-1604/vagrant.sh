@@ -11,9 +11,7 @@ usermod -a -G sudo vagrant
 mkdir /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
 cd /home/vagrant/.ssh
-wget --no-check-certificate 'https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub' -O authorized_keys
+wget --no-check-certificate 'https://bitbucket.org/mjscosta/vagrant/raw/37610c7329a0ee30ab1a64be2f05df883131031c/vagrant-rsa.pub' -O authorized_keys
+touch authorized_keys
 chmod 600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant /home/vagrant/.ssh
-
-# Install NFS for Vagrant
-apt-get install -y nfs-common
