@@ -1,8 +1,7 @@
 # Install some system packages
-apt-get install -y wget curl vim git mercurial bzr tree python python-pip htop nmap
+# packages to add and remove ppas
+apt-get install -y python-software-properties software-properties-common
 
-# Install ifs
-pip install -U setuptools pip ifs
+apt-get install -y vim git zip unzip curl wget
 
-# Install hostess
-ifs install hostess
+apt-get install -y tree htop nmap

@@ -1,6 +1,6 @@
 {
   "variables": {
-    "name": "cbednarski/ubuntu-1604",
+    "name": "mjscosta/ubuntu-1604",
     "build_cpu_cores": "2",
     "build_memory": "1024",
     "cpu_cores": "1",
@@ -36,7 +36,7 @@
         "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ",
         "initrd=/install/initrd.gz -- <enter>"
       ],
-      "boot_wait": "5s",
+      "boot_wait": "8s",
       "disk_size": "{{user `disk_size`}}",
       "headless": "{{user `headless`}}",
       "http_directory": "http",
@@ -46,7 +46,7 @@
       "shutdown_command": "echo 'vagrant' | sudo -S poweroff",
       "ssh_password": "{{user `ssh_username`}}",
       "ssh_username": "{{user `ssh_password`}}",
-      "ssh_wait_timeout": "20m",
+      "ssh_wait_timeout": "10m",
       "tools_upload_flavor": "linux",
       "type": "vmware-iso",
       "vmx_data": {
@@ -72,7 +72,7 @@
         "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ",
         "initrd=/install/initrd.gz -- <enter>"
       ],
-      "boot_wait": "5s",
+      "boot_wait": "8s",
       "disk_size": "{{user `disk_size`}}",
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "Ubuntu_64",
@@ -84,7 +84,7 @@
       "shutdown_command": "echo 'vagrant' | sudo -S poweroff",
       "ssh_password": "{{user `ssh_username`}}",
       "ssh_username": "{{user `ssh_password`}}",
-      "ssh_wait_timeout": "20m",
+      "ssh_wait_timeout": "10m",
       "type": "virtualbox-iso",
       "vboxmanage": [
         [
